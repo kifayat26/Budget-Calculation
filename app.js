@@ -401,7 +401,7 @@ var controller = (function(budgetCtrl, UICrtl){
         if(input.decription !== "" && !isNaN(input.value) && input.value > 0){
             
             // 2. add the item to the budget controller
-            newItem = budgetCtrl.addItem(input.type, input.decription, input.value);
+            newItem = budgetCtrl.addItem(input.type, input.description, input.value);
 
             // 3. add the item to the UI
             UICrtl.addListItem(newItem, input.type);
